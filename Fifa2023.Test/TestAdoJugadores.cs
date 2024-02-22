@@ -4,7 +4,7 @@ namespace Fifa2023.Test;
 public class TestAdoJugadores : TestAdo
 {
     [Theory]
-    [InlineData(2)]
+    [InlineData(1)]
     public void TraerJugadores(sbyte IdJugador)
     {
         var jugador = Ado.GetJugadores(IdJugador);
@@ -23,7 +23,7 @@ public class TestAdoJugadores : TestAdo
     public void AltaJugadores()
     {
         sbyte idJugador = 2;
-        string usuario = "Raul";
+        string usuario = "Jorge el curioso";
         string nombre = "Jorge";
         string apellido = "Copa";
         string contrasena = "12345678";

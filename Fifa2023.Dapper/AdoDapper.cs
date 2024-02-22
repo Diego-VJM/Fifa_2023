@@ -51,7 +51,8 @@ public class AdoDapper : IAdo
     private static readonly string _queryHabilidadesporID 
     = @"SELECT * FROM Habilidades WHERE IdHabilidad = @unIdHabilidad";
     private static readonly string _queryAltaHabilidades
-    = @"INSERT INTO Futbolistas VALUES (@IdHabilidad, @Nombre, @Descripcion)";
+    = @"INSERT INTO Habilidades (idHabilidad, nombre, descripcion) 
+                        VALUES (@IdHabilidad, @Nombre, @Descripcion)";
     public void AltaHAbilidades(Habilidades habilidades)
         => _conexion.Execute(
                 _queryAltaHabilidades,

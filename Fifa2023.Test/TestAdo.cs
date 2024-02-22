@@ -2,9 +2,6 @@ using Fifa2023.Core;
 using Fifa2023.Dapper;
 
 namespace Fifa2023.Test;
-/// <summary>
-/// El objetivo de esta clase es brindar una instancia de Ado para los test
-/// </summary>
 public class TestAdo
 {
     protected readonly IAdo Ado;

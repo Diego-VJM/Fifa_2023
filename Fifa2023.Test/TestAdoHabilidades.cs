@@ -23,8 +23,8 @@ public class TestAdoHabilidades : TestAdo
     public void AltaHAbilidades()
     {
         sbyte idHabilidad = 2;
-        string Nombre = "Calidad";
-        string Descripcion = "Le pega godeitor";
+        string nombre = "Calidad";
+        string descripcion = "Le pega godeitor";
 
         var habilidades = Ado.GetHabilidades(idHabilidad);
 
@@ -32,7 +32,9 @@ public class TestAdoHabilidades : TestAdo
 
         var nuevohabilidad = new Habilidades()
         {
-            
+            IdHabilidad = idHabilidad,
+            Nombre = nombre,
+            Descripcion = descripcion
         };
 
         Ado.AltaHAbilidades(nuevohabilidad);        
